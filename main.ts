@@ -18,7 +18,7 @@ basic.forever(function Hra() {
     let P1 = input.pinIsPressed(TouchPin.P1)
     let P2 = input.pinIsPressed(TouchPin.P2)
     if (game_start == true) {
-        if (P1 && P2) {
+        if (P1 == true && P2 == true) {
             basic.showString("R")
             game_start = false
         }

@@ -19,7 +19,7 @@ def Hra():
     P1 = input.pin_is_pressed(TouchPin.P1)
     P2 = input.pin_is_pressed(TouchPin.P2)
     if game_start == True:
-        if P1 and P2:
+        if P1 == True and P2 == True:
             basic.show_string("R")
             game_start = False
 
@@ -45,5 +45,4 @@ def Hra():
             basic.show_string("A")
             game_start = False
             cheat = True
-
 basic.forever(Hra)
